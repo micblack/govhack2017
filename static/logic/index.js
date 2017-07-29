@@ -5,14 +5,9 @@ let vm = new Vue({
 	el: '#app',
 	computed: {},
 	data: {
-		salutation: 'no change',
-		sessionPersona: function () {
-			return sessionStorage.getItem('persona') || ''
-		}
+		salutation: 'no change'
 	},
 	methods: {
-		personaChange(val) {
-			sessionStorage.setItem('persona', val);
-		}
+		personaChange(val) {}
 	}
 })

@@ -5,24 +5,26 @@
 	</head>
 	<body>
 		<div id="app">
-			<el-row :gutter="10">
+			<el-row :gutter="10" class="persona-container">
 				<el-col :xs="24" class="text-right">
 					<personas @change="personaChange"></personas>
 				</el-col>
 			</el-row>
 			
-			<el-row :gutter="10" class="contained">
-				<el-col :xs="24" :md="12">
-					<el-switch
-					  v-model="salutation"
-					  on-text="Hello"
-					  off-text="Goodbye"
-					  on-value="Hello"
-					  off-value="Goodbye">
-					</el-switch>
-				</el-col>
-				<el-col :xs="24" :md="12">{{ salutation }} World</el-col>
-			</el-row>
+			<div class="content">
+				<el-row :gutter="10" class="contained">
+					<el-col :xs="24" :md="12">
+						<el-switch
+						  v-model="salutation"
+						  on-text="Hello"
+						  off-text="Goodbye"
+						  on-value="Hello"
+						  off-value="Goodbye">
+						</el-switch>
+					</el-col>
+					<el-col :xs="24" :md="12">{{ salutation }} World</el-col>
+				</el-row>
+			</div>
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js" integrity="sha256-CaFg/YykXqx3pn0h0oVBc6u5glps1fubTHqe/gHi/pA=" crossorigin="anonymous"></script>
