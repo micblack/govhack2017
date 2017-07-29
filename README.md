@@ -8,6 +8,8 @@ This is a project using open government data for the GovHack 2017 hackathon.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+**There is no build system, just work from the static folder for views**
+
 ### Run on server
 
 ```
@@ -22,7 +24,9 @@ python app.py --home
 
 ## Built With
 
-* [CryptoPhoto](https://cryptophoto.com/) - The web framework used
+* [CryptoPhoto](https://cryptophoto.com/) - The 2FA service
+* [ElementUI](http://element.eleme.io/) - UI framework
+* [VueJS](https://vuejs.org/) - Front end framework
 
 ## Contributing
 
