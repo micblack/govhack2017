@@ -1,0 +1,12 @@
+/* Include default.css in all pages */
+body {
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+.contained {
+	max-width: 960px; 
+}
+
+.text-right {
+	text-align: right;
+}
