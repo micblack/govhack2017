@@ -37,6 +37,23 @@
 					</el-col>
 				</el-row>
 			</div>
+
+			<el-dialog
+			  title="Download CrytoPhoto Identity Confirmation app"
+			  :visible.sync="appNotice"
+			  size="large"
+			  close-on-press-escape="false"
+			  show-close="false">
+			  <span>
+				To keep you safe and give you a way to accept deliveries, follow the instructions below to install the CryptoPhoto security and identity app:
+			  </span>
+			  <span>
+			  	[app install stuff]
+			  </span>
+			  <span slot="footer" class="dialog-footer">
+			    <el-button type="primary" @click="confirmAppDownload()">Ok</el-button>
+			  </span>
+			</el-dialog>
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js" integrity="sha256-CaFg/YykXqx3pn0h0oVBc6u5glps1fubTHqe/gHi/pA=" crossorigin="anonymous"></script>
