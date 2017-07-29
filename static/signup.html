@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/element-ui/1.4.0/theme-default/index.css" integrity="sha256-xAgSImVC3RpKLCjs2WcvVqnJob87rw+fr2JClUaE3wQ=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="style/default.css">
+	</head>
+	<body>
+		<div id="app">
+			<el-row :gutter="10" class="persona-container">
+				<el-col :xs="24" class="text-right">
+					<personas @change="personaChange"></personas>
+				</el-col>
+			</el-row>
+			
+			<div class="content">
+				<el-row :gutter="10" class="contained padded">
+					<el-col :xs="24">
+						<el-tabs v-model="activeTab">
+							<el-tab-pane label="Login" name="login">
+								<h1>Sign up as a {{ persona }}</h1>
+								<hr>
+								<el-input placeholder="First name" v-model="newUser.firstName" autofocus="true" class="bottom-margin"></el-input>
+								<el-input placeholder="Last name" v-model="newUser.lastName" class="bottom-margin"></el-input>
+								<el-input placeholder="Email" v-model="newUser.email" type="email" class="bottom-margin"></el-input>						
+								<el-button type="primary"@click="signUp()">Sign Up<i class="el-icon-arrow-right el-icon-right"></i></el-button>
+		</el-button-group>
+							</el-tab-pane>
+							<el-tab-pane label="Sign Up" name="signup">
+								<h1>{{ persona }} Log In</h1>
+								<hr>
+								<el-input placeholder="Email" v-model="loginUser.email" type="email" class="bottom-margin"></el-input>
+								<el-button type="primary" @click="logIn()">Log In<i class="el-icon-arrow-right el-icon-right"></i></el-button>
+		</el-button-group>
+
+							</el-tab-pane>
+						</el-tabs>
+
+					</el-col>
+				</el-row>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js" integrity="sha256-CaFg/YykXqx3pn0h0oVBc6u5glps1fubTHqe/gHi/pA=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/1.4.0/index.js" integrity="sha256-tgga5j6kQBXAsyIp7yuP4i1L8AafIZdd1S61Pk3fDqk=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js" integrity="sha256-JXU9bC6uJttvR5dnFkXWImMeNfVl0MwHM8OdBtdGtJs=" crossorigin="anonymous"></script>
+		<script src="lib/vue.loader.js"></script>
+		<script src="logic/signup.js"></script>
+
+	</body>
+</html>

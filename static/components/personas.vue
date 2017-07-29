@@ -22,13 +22,13 @@ module.exports = {
 	data() {
 		return {
 			personas: [{
-				value: 'subscriber',
+				value: 'Subscriber / Patient',
 				label: 'Subscriber / Patient'
 			}, {
-				value: 'doctor',
+				value: 'Doctor / Medical Professional',
 				label: 'Doctor / Medical Professional'
 			}, {
-				value: 'warehouse',
+				value: 'Warehouse / Pharmacy',
 				label: 'Warehouse / Pharmacy'
 			}],
 			persona: sessionStorage.getItem('persona') || ''

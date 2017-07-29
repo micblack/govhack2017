@@ -1,6 +1,24 @@
 /* Include default.css in all pages */
+
+/* CSS variables aren't supported in any IE for no good reason */
+:root {
+	--primary-color: #1c97d4;
+	--primary-color-contrast: #fff;
+	--secondary-color: #6a499d;
+	--secondary-color-contrast: #fff;
+	--highlight-color: #f7973c;
+	--highlight-color-contrast: #000;
+	--contrast-color: #eb2227;
+	--contrast-color-contrast: #fff;
+	--darkest-color: #222;
+	--thin-gutter:10px;
+	--gutter:20px;
+}
+
 body {
 	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	padding:0;
+	margin:0;
 }
 
 .contained {
@@ -9,4 +27,17 @@ body {
 
 .text-right {
 	text-align: right;
+}
+
+.persona-container {
+	background-color: var(--darkest-color);
+	padding: var(--thin-gutter);
+}
+
+.padded {
+	padding: var(--gutter);
+}
+
+.bottom-margin {
+	margin-bottom: var(--gutter);
 }
