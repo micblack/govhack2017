@@ -27,6 +27,7 @@ python app.py --home
 * [CryptoPhoto](https://cryptophoto.com/) - The 2FA service
 * [ElementUI](http://element.eleme.io/) - UI framework
 * [VueJS](https://vuejs.org/) - Front end framework
+* Django, Flask, Python
 
 ## Contributing
 
