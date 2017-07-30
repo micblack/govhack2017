@@ -17,7 +17,7 @@
 					<el-col :xs="24">
 						<el-tabs v-model="activeTab">
 							<el-tab-pane label="Login" name="login">
-								<h1>Sign up as a {{ persona }}</h1>
+								<h1>Sign up as a {[{ persona }]}</h1>
 								<hr>
 								<el-input placeholder="First name" v-model="newUser.firstName" class="bottom-margin"></el-input>
 								<el-input placeholder="Last name" v-model="newUser.lastName" class="bottom-margin"></el-input>
@@ -26,7 +26,7 @@
 		</el-button-group>
 							</el-tab-pane>
 							<el-tab-pane label="Sign Up" name="signup">
-								<h1>{{ persona }} Log In</h1>
+								<h1>{[{ persona }]} Log In</h1>
 								<hr>
 								<el-input placeholder="Email" v-model="loginUser.email" type="email" class="bottom-margin"></el-input>
 								<el-button type="primary" @click="logIn()">Log In<i class="el-icon-arrow-right el-icon-right"></i></el-button>
