@@ -8,7 +8,8 @@ let vm = new Vue({
 		newUser: {
 			firstName: '',
 			lastName: '',
-			email: ''
+			email: '',
+			persona: ''
 		},
 		loginUser: {
 			email: ''
@@ -21,6 +22,7 @@ let vm = new Vue({
 	methods: {
 		personaChange(val) {
 			this.persona = val;
+			this.newUser.persona = val;
 		},
 		signUp: function () {
 			console.log('POST: ', this.serviceUrl + 'signup', this.newUser);
