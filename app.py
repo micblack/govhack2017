@@ -15,7 +15,7 @@ publickey = app.config['CP_PRIVATEKEY']
 salt = app.config['CP_SALT']
 
 
-test_uid    = "123456"    # This is the UserID of your customer. (It does not get revealed)
+test_uid    = "12345"    # This is the UserID of your customer. (It does not get revealed)
 server = "https://cryptophoto.com"
 cp = CryptoPhotoUtils(server, privatekey, publickey, test_uid)
 
