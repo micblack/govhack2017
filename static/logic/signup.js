@@ -2,6 +2,7 @@ Vue.use('element-ui')
 httpVueLoaderRegister(Vue, 'static/components/personas.vue');
 
 let vm = new Vue({
+	delimiters: ['{[{', '}]}'],
 	el: '#app',
 	computed: {},
 	data: {

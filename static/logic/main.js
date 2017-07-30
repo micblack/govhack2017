@@ -3,6 +3,7 @@ httpVueLoaderRegister(Vue, 'static/components/personas.vue');
 httpVueLoaderRegister(Vue, 'static/components/emergency.vue');
 
 let vm = new Vue({
+	delimiters: ['{[{', '}]}'],
 	el: '#app',
 	computed: {},
 	data: {
