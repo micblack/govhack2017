@@ -29,6 +29,8 @@ python app.py --home
 * [VueJS](https://vuejs.org/) - Front end framework
 * Django, Flask, Python
 
+* CryptoPhoto python dependencies: urtlllb, hashlib, hmac, time, json, base64  
+
 ## Contributing
 
 Given that this is really a holding place for a one time weekend hackathon, we're not expecting contributions from outside of our team or after the weekend.
