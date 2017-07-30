@@ -90,11 +90,14 @@ class CryptoPhotoUtils(object):
 
     if not response:
       ret["is_valid"] = False
-      ret["error"] = "service-unavailable"
+      ret["error"] = "Service-unavailable"
       return ret
     
     return_values = response.splitlines()
-    
+ 
+    print return_values
+    print '\n'
+   
     try:
       if return_values[0] == 'success':
         ret["is_valid"] = True
@@ -112,7 +115,7 @@ class CryptoPhotoUtils(object):
           ret["errip"] = return_values[3]
     except:
       ret["is_valid"] = False
-      ret["error"] = 'malformed-response'
+      ret["error"] = 'Malformed-response'
 
     return ret
 
