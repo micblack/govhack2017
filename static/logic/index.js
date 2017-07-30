@@ -1,6 +1,6 @@
 Vue.use('element-ui')
-httpVueLoaderRegister(Vue, 'components/personas.vue');
-httpVueLoaderRegister(Vue, 'components/emergency.vue');
+httpVueLoaderRegister(Vue, 'static/components/personas.vue');
+httpVueLoaderRegister(Vue, 'static/components/emergency.vue');
 
 let vm = new Vue({
 	el: '#app',
@@ -12,7 +12,7 @@ let vm = new Vue({
 			'Epilum 20mg'
 		],
 		selectedPrescriptions: []
-	},	
+	},
 	methods: {
 		personaChange(val) {}
 	}
