@@ -10,6 +10,22 @@ These instructions will get you a copy of the project up and running on your loc
 
 **There is no build system, just work from the static folder for views**
 
+### Pre-install instructions (if running locally)
+
+This project requires Python@2.7
+```
+sudo pip install flask
+```
+
+It will also require a config.cfg file in the root to run locally
+```
+DEBUG = True
+DEVELOPMENT = True
+CP_PUBLICKEY  = 'yourkey'
+CP_PRIVATEKEY = 'yourkey'
+CP_SALT = 'yourkey'
+```
+
 ### Run on server
 
 ```
