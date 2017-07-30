@@ -4,6 +4,10 @@ The project aims to deliver healthcare outcomes for those with difficulty to tra
 
 This is a project using open government data for the GovHack 2017 hackathon.
 
+View the video here: https://drive.google.com/file/d/0B8cD4u2-uC6EZGRuNEFQczRpbXc/view
+
+Experience the web site here: https://healthcraft.team.sh/account
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
