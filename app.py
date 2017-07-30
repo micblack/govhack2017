@@ -18,7 +18,7 @@ test_uid    = "123456"    # This is the UserID of your customer. (It does not ge
 
 # the root of the site
 @app.route("/")
-def main():
+def index():
         return render_template('index.html',test=testv)
 
 @app.route("/signup")
@@ -26,7 +26,7 @@ def signup():
         return render_template('signup.html')
 
 @app.route("/main")
-def signup():
+def main():
         return render_template('main.html')
 
 if __name__ == "__main__":
