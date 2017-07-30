@@ -15,8 +15,8 @@
 				<emergency></emergency>
 
 				<section class="list-prescriptions">
-					<div v-for="prescription in prescriptions">
-						<el-card :body-style="{ padding: '0px' }">
+					<div >
+						<el-card :body-style="{ padding: '0px' }" v-for="prescription in prescriptions">
 							<img src="static/media/{{ prescription.img }}" class="image">
 							<div class="padded">
 								<h4>{{ prescription.title }}</h4>
