@@ -8,11 +8,10 @@ let vm = new Vue({
 	data: {
 		wasWelcomed: sessionStorage.getItem('persona') || false,
 		prescriptions: [
-		{
-
-		},
-		]
-
+			'Cannabidoil',
+			'Epilum 20mg'
+		],
+		selectedPrescriptions: []
 	},	
 	methods: {
 		personaChange(val) {}

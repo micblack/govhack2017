@@ -13,12 +13,12 @@
 			
 			<div class="content">
 				<emergency></emergency>
-				<el-row :gutter="10" class="contained">
-					<el-col :xs="24" :md="12">
-						
-					</el-col>
-					<el-col :xs="24" :md="12">{{ salutation }} World</el-col>
-				</el-row>
+
+				<section class="list-prescriptions">
+					<div v-for="prescription in prescriptions">
+						{{ prescription }}
+					</div>
+				</section>
 			</div>
 		</div>
 
