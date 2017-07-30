@@ -28,7 +28,8 @@ def signup():
     else:
         return render_template('signup.html')
 def do_the_signup():
-    print "signup land"
+        return render_template('hello.html',test=testv)
+
 @app.route("/main")
 def main():
         return render_template('main.html')
