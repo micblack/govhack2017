@@ -16,7 +16,18 @@
 
 				<section class="list-prescriptions">
 					<div v-for="prescription in prescriptions">
-						{{ prescription }}
+						<el-card :body-style="{ padding: '0px' }">
+							<img src="static/media/{{ prescription.img }}" class="image">
+							<div class="padded">
+								<h4>{{ prescription.title }}</h4>
+								<div class="bottom clearfix">
+									<el-tag v-if="precription.overdue" type="danger">Overdue</el-tag>
+									<el-tag v-if="prescription.bulk" type="gray">60 tablets</el-tag>
+									<el-tag v-if="prescription.inStock" type="success">In Stock</el-tag>
+									<el-checkbox v-model="checked">Order</el-checkbox>
+								</div>
+							</div>
+						</el-card>
 					</div>
 				</section>
 			</div>
@@ -26,7 +37,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/1.4.0/index.js" integrity="sha256-tgga5j6kQBXAsyIp7yuP4i1L8AafIZdd1S61Pk3fDqk=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js" integrity="sha256-JXU9bC6uJttvR5dnFkXWImMeNfVl0MwHM8OdBtdGtJs=" crossorigin="anonymous"></script>
 		<script src="/static/lib/vue.loader.js"></script>
-		<script src="/static/logic/index.js"></script>
+		<script src="/static/logic/main.js"></script>
 
 	</body>
 </html>
