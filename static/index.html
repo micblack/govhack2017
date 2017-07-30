@@ -12,15 +12,10 @@
 			</el-row>
 			
 			<div class="content">
+				<emergency></emergency>
 				<el-row :gutter="10" class="contained">
 					<el-col :xs="24" :md="12">
-						<el-switch
-						  v-model="salutation"
-						  on-text="Hello"
-						  off-text="Goodbye"
-						  on-value="Hello"
-						  off-value="Goodbye">
-						</el-switch>
+						
 					</el-col>
 					<el-col :xs="24" :md="12">{{ salutation }} World</el-col>
 				</el-row>

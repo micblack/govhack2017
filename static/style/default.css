@@ -11,6 +11,7 @@
 	--contrast-color: #eb2227;
 	--contrast-color-contrast: #fff;
 	--darkest-color: #222;
+	--lightest-color: #fff;
 	--thin-gutter:10px;
 	--gutter:20px;
 }
@@ -29,6 +30,10 @@ body {
 	text-align: right;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .persona-container {
 	background-color: var(--darkest-color);
 	padding: var(--thin-gutter);
@@ -38,6 +43,20 @@ body {
 	padding: var(--gutter);
 }
 
+.padded.slim {
+	padding: var(--thin-gutter);
+}
+
 .bottom-margin {
 	margin-bottom: var(--gutter);
+}
+
+.emergency {
+	background-color: var(--highlight-color);
+	color: var(--highlight-color-contrast);
+}
+
+.emergency a {
+	text-decoration: none;
+	color: var(--lightest-color);
 }
