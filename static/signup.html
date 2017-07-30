@@ -18,7 +18,7 @@
 							<el-tab-pane label="Login" name="login">
 								<h1>Sign up as a {{ persona }}</h1>
 								<hr>
-								<el-input placeholder="First name" v-model="newUser.firstName" autofocus="true" class="bottom-margin"></el-input>
+								<el-input placeholder="First name" v-model="newUser.firstName" class="bottom-margin"></el-input>
 								<el-input placeholder="Last name" v-model="newUser.lastName" class="bottom-margin"></el-input>
 								<el-input placeholder="Email" v-model="newUser.email" type="email" class="bottom-margin"></el-input>						
 								<el-button type="primary"@click="signUp()">Sign Up<i class="el-icon-arrow-right el-icon-right"></i></el-button>
@@ -42,8 +42,9 @@
 			  title="Download CrytoPhoto Identity Confirmation app"
 			  :visible.sync="appNotice"
 			  size="large"
-			  close-on-press-escape="false"
-			  show-close="false">
+			  :allow-close="false"
+			  :close-on-press-escape="false"
+			  :show-close="false">
 			  <span>
 				To keep you safe and give you a way to accept deliveries, follow the instructions below to install the CryptoPhoto security and identity app:
 			  </span>
@@ -51,7 +52,7 @@
 			  	[app install stuff]
 			  </span>
 			  <span slot="footer" class="dialog-footer">
-			    <el-button type="primary" @click="confirmAppDownloaded()">Ok</el-button>
+			    <el-button type="primary" @click="confirmedAppDownload()">Ok</el-button>
 			  </span>
 			</el-dialog>
 		</div>
