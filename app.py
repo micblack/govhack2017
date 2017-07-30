@@ -1,7 +1,9 @@
+# This is the HealthCraft Govhack2017 entry from high-fliers team.
+
 from flask import Flask, render_template
 import sys
 
-# testing: import urllib, hashlib, hmac, time, json, base64
+import urllib, hashlib, hmac, time, json, base64	# CryptoPhoto dependencies
 
 app = Flask(__name__)
 app.config.from_pyfile('config.cfg')
