@@ -11,11 +11,11 @@ print(testv)
 # the root of the site
 @app.route("/")
 def main():
-        return render_template('signup.html',test=testv)
+        return render_template('index.html',test=testv)
 
-@app.route("/test")
-def test():
-        return render_template('indext.html')
+@app.route("/signup")
+def signup():
+        return render_template('signup.html')
 
 if __name__ == "__main__":
      if len(sys.argv) >1:

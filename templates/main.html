@@ -7,13 +7,18 @@
 		<div id="app">
 			<el-row :gutter="10" class="persona-container">
 				<el-col :xs="24" class="text-right">
-					<iframe width="960" height="540" src="https://www.youtube.com/embed/ozoS7mbHyOM" frameborder="0" allowfullscreen></iframe>
+					<personas @change="personaChange"></personas>
 				</el-col>
 			</el-row>
+
 			<div class="content">
-				<h1 class="text-center">The Health Craft</h1>
-				<a href="signup">Sign Up/ Login Page</a>
-				<a href="main">Main Page</a>
+				<emergency></emergency>
+
+				<section class="list-prescriptions">
+					<div v-for="prescription in prescriptions">
+						{{ prescription }}
+					</div>
+				</section>
 			</div>
 		</div>
 
