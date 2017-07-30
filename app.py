@@ -13,8 +13,8 @@ private_key = app.config['CP_PUBLICKEY']
 public_key = app.config['CP_PRIVATEKEY']
 
 test_uid    = "123456"    # This is the UserID of your customer. (It does not get revealed)
-
-#cp = CryptoPhotoUtils(private_key, public_key, test_uid)
+server = "https://cryptophoto.com"
+cp = CryptoPhotoUtils(server, private_key, public_key, test_uid)
 
 # the root of the site
 @app.route("/")
