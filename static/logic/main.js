@@ -6,14 +6,22 @@ let vm = new Vue({
 	el: '#app',
 	computed: {},
 	data: {
-		wasWelcomed: sessionStorage.getItem('persona') || false,
 		prescriptions: [
-			'Cannabidoil',
-			'Epilum 20mg'
-		],
-		selectedPrescriptions: []
+			{
+				title: 'Epilim',
+				img: 'epilim.png',
+				overdue: true,
+				bulk: true,
+				inStock: false
+			},
+			{
+				title: 'CBD',
+				img: 'cbd.png',
+				overdue: false,
+				bulk: false,
+				inStock: true
+			},
+		]
 	},
-	methods: {
-		personaChange(val) {}
-	}
+	methods: {}
 })
